@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | My Work</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #3498db, #8e44ad);
+    }
+
+    #portfolio {
+      padding: 3rem 1rem;
+      text-align: center;
+      color: white;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h4 {
+      color: #111;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .portfolio-filters {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      display: inline-flex;
+      gap: 1rem;
+    }
+
+    .filter-btn {
+      padding: 0.5rem 1.2rem;
+      border: none;
+      background-color: #eee;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .portfolio-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .portfolio-category {
+      grid-column: 1 / -1;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      text-align: left;
+    }
+
+    .portfolio-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .back-button-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-button {
+      padding: 12px 30px;
+      background-color: #1f1f1f;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      border: 2px solid #00ffd5;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .back-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(0, 255, 213, 0.3), transparent);
+      transition: left 0.4s ease-in-out;
+    }
+
+    .back-button:hover::before {
+      left: 100%;
+    }
+
+    .back-button:hover {
+      background-color: #00ffd5;
+      color: #000;
+      box-shadow: 0 0 12px rgba(0, 255, 213, 0.6);
+    }
+
+    @media screen and (max-width: 768px) {
+      .portfolio-item img {
+        height: 200px;
+      }
+
+  .portfolio-item img {
+  width: 100%;
+  height: 400px; /* Fixed height */
+  object-fit: cover; /* Crop to fit box */
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+  padding-bottom: 10px;
+  
+}
+.portfolio-item {
+  display: block;
+  background: #f6f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 25px;
+  margin-top: 5px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 12px rgba(223, 7, 7, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+    }
+  </style>
+</head>
+<body>
+
+  <section id="portfolio">
+    <h2>My Portfolio</h2>
+
+    <!-- Filter Buttons -->
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="development">Development</button>
+      <button class="filter-btn" data-filter="editing">Editing</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio-grid">
+
+      <!-- Development Section -->
+      <div class="portfolio-section" data-section="development">
+        <h3 class="portfolio-category">Development Projects</h3>
+
+        <a href="Knot bill software.pdf" target="_blank" class="portfolio-item" data-category="development">
+          <img src="Screenshot 2025-05-22 182724.jpg" alt="Development Project 1" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>Billing Software</h4>
+        </a>
+
+        <a href="https://svetri045.github.io/Ecom-VSBuyZone/" target="_blank" class="portfolio-item" data-category="development">
+          <img src="VSBuyZone.png" alt="Development Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>VSBuyZone E-com</h4>
+        </a>
+
+        <a href="https://svetri045.github.io/to-do-list/" target="_blank" class="portfolio-item" data-category="development">
+          <img src="To-do List.png" alt="Development Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>To-do List</h4>
+        </a>
+      </div>
+
+      <!-- Editing Section -->
+      <div class="portfolio-section" data-section="editing">
+        <h3 class="portfolio-category">Editing Projects</h3>
+
+        <a href="https://youtube.com/shorts/6YMuNp8BRyU" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 1.png" alt="Editing Project 1" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 1</h4>
+        </a>
+
+        <a href="https://youtube.com/shorts/wAu4OJC1YL0" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 2.png" alt="Editing Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 2</h4>
+        </a>
+
+        <a href="https://youtube.com/shorts/gM7kp2qa7rM" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 3.png" alt="Editing Project 3" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 3</h4>
+        </a>
+
+        <a href="https://youtube.com/shorts/6vbujf_OV_4" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 4.png" alt="Editing Project 4" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 4</h4>
+        </a>
+
+        <a href="https://youtube.com/shorts/RLVAHLQJlQE" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 5.png" alt="Editing Project 5" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 5</h4>
+          
+        <a href="https://youtube.com/shorts/uYdzBWSkmy4?si=MfRnQh43Q69motyM" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 6.png" alt="Editing Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 6</h4>
+        </a>
+
+        <a href="https://youtube.com/shorts/XXym5o4XZto?si=_1Cs0GKGJsEWPZLk" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 7.png" alt="Editing Project 3" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 7</h4>
+        </a>
+
+        <a href="https://youtube.com/shorts/mKpPAUHPJ_I?si=cWxAn5_fJs42zvej" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 8.png" alt="Editing Project 4" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 8</h4>
+        </a>
+
+        <a href="https://youtube.com/shorts/U2zKgWv6V3w?si=GlAvb_6Z7aVGVtba" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 9.png" alt="Editing Project 5" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 9</h4>
+
+        <a href="https://youtube.com/shorts/LL7Dd8itYaE?si=IK4zfg5w4I2tAdDs" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 10.png" alt="Editing Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 10</h4>
+        </a>
+
+        <a href="https://youtube.com/shorts/o-jNOmAeQnU?si=R1jqh1BMxTNvOQA0" target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 11.png" alt="Editing Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 11</h4>
+        </a>
+
+        <a href="https://youtube.com/shorts/85PK4kufytA?si=dsLf0nn8p-Twz6Lw " target="_blank" class="portfolio-item" data-category="editing">
+          <img src="video 12.png" alt="Editing Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>BS Video 12</h4>
+        </a>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button-container">
+      <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
+  </section>
+
+  <script>
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const sections = document.querySelectorAll(".portfolio-section");
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelector(".filter-btn.active").classList.remove("active");
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+
+        sections.forEach(section => {
+          if (filter === "all" || section.getAttribute("data-section") === filter) {
+            section.style.display = "grid";
+          } else {
+            section.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

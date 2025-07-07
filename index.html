@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vetrivel's portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">S.VETRI<span>VEL</span></div>
+  <nav id="nav-menu" class="nav-links">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+     <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+<style>
+  .hero{
+    background: url('.background.jpg') no-repeat center center/cover;
+  }
+</style>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="image-frame">
+        <img src="profile.png" alt="Profile" height="100%" width="100%"/>
+      </div>
+      <div class="intro">
+        <h1>Hello, I'm <span>S.VETRIVEL</span></h1>
+        <p>Full Stack Web Designer | Developer</p>
+
+        <div class="social-icons">
+          <a href="https://www.instagram.com/vetrivelselvaraj_045/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/vetrivel-selvaraj-362965347/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/916369432097" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+        </div><br><br>
+
+       <a href="Vetrivel.S Resume.pdf" target="_blank" class="btn">View Resume</a>
+        <a href="#contact" class="btn gradient-glow">Hire Me</a>
+
+        <div class="about">
+          <h3>About Me</h3>
+          <p>I’m a passionate web developer focused on crafting clean & user​‑friendly experiences. I love turning ideas into reality using code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Experience Section -->
+<section id="experience" class="section colorful">
+  <span id="experience" style="position: relative; top: -100px;"></span>
+  <h2>Experience</h2><br>
+  
+  <div class="experience-container">
+    <!-- Job 1 -->
+    <div class="experience-card">
+      <h3>Full Stack Developer</h3>
+      <h4>VELGA Creative Powerhouse Pvt LTD,Erode</h4>
+      <p class="duration">May 2025 - Present</p>
+      <p class="description">
+       Full Stack Developer passionate about crafting seamless user experiences and building scalable, high-performance web applications.
+      </p>
+      <ul class="responsibilities">
+        <li>Collaborated with designers and backend developers to create seamless user experiences.</li>
+        <li>Implemented front-end frameworks like React js</li>
+        <li>Optimized websites for better performance and SEO rankings.</li>
+      </ul>
+     
+      <ul class="achievements">
+         <p><strong>Key Achievements:</strong></p><br>
+        <li>Increased web traffic by 30% through better UI design and performance optimization.</li>
+        <li>Led a team in the redesign of the company's main website, resulting in a 25% boost in customer engagement.</li>
+      </ul>
+    </div>
+    
+    <!-- Job 2 -->
+    <div class="experience-card">
+      <h3>App development & Editing</h3>
+      <h4>Bharani Silks Erode</h4>
+      <p class="duration">July 2024 - Feb 2025</p>
+      <p class="description">
+        Experienced in video editing, social media management, and software development, delivering engaging content and robust digital solutions across platforms.
+      </p>
+      <ul class="responsibilities">
+        <li>Developed a custom desktop billing application for billing purpose.</li>
+        <li>Handled day-to-day posting and scheduling across platforms (Instagram, Facebook, YouTube Shorts).</li>
+        <li>Used tools like [e.g.,CapCut,Canva,Visualbasic 6.0 etc.].</li>
+      </ul>
+     
+      <ul class="achievements">
+         <p><strong>Key Achievements:</strong></p><br>
+        <li>Developed desktop billing App using Visual Basic 6.0 , improving billing speed and accuracy, and reducing manual work by over 80%.</li>
+        <li>Edited 30+ promo videos with CapCut, boosting social media engagement 3x.</li>
+      </ul>
+    </div>
+
+    <!-- Job 3 -->
+    <div class="experience-card">
+      <h3>Crypto Trading</h3>
+      <h4>Aarman Clint,Tirupur</h4>
+      <p class="duration">December 2023 - Junw 2024</p>
+      <p class="description">
+       Bitcoiva Trading – Crypto spot trading experience using INR pairs on the centralized exchange Bitcoiva.
+      </p>
+      <ul class="responsibilities">
+        <li>Experienced in buying and selling crypto with Indian Rupees, with knowledge of market structure and customer support.</li>
+        <li>Provided dedicated trading support to over 20 active clients in Beldex coin with timely insights and strategy.</li>
+        <li>Monitored Beldex price trends daily to provide accurate buy/sell recommendations with market insights.</li>
+      </ul>
+      
+      <ul class="achievements">
+        <p><strong>Key Achievements:</strong></p><br>
+        <li>can easily buy and sell all the coins available in the crypto market with flexibility and security.</li>
+        <li>Operated safely during market volatility and effectively managed the risk-reward ratio.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="portfolio">
+  <span id="portfolio" style="position: relative; top: -100px;"></span>
+  <h2>My Portfolio</h2>
+
+  <!-- Filter Buttons -->
+  <div class="portfolio-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="development">Development</button>
+    <button class="filter-btn" data-filter="editing">Editing</button>
+  </div>
+
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid">
+
+    <!-- Development Section -->
+    <div class="portfolio-section" data-section="development">
+      <h3 class="portfolio-category">Development Projects</h3>
+
+      <a href="Knot bill software.pdf" target="_blank" class="portfolio-item" data-category="development">
+        <img src="Screenshot 2025-05-22 182724.jpg" alt="Development Project 1" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+        <h4>Project 1</h4>
+      </a>
+
+      <a href="https://svetri045.github.io/Ecom-VSBuyZone/" target="_blank" class="portfolio-item" data-category="development">
+        <img src="VSBuyZone.png" alt="Development Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+        <h4>VSBuyZone E-com</h4>
+      </a>
+
+       <a href="https://svetri045.github.io/to-do-list/" target="_blank" class="portfolio-item" data-category="development">
+          <img src="To-do List.png" alt="Development Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+          <h4>To-do List</h4>
+        </a>
+    </div>
+
+    <!-- Editing Section -->
+    <div class="portfolio-section" data-section="editing">
+      <h3 class="portfolio-category">Editing Projects</h3>
+
+      <a href="https://youtube.com/shorts/6YMuNp8BRyU?si=RCVNf6Iby1znsr7r" target="_blank" class="portfolio-item" data-category="editing">
+        <img src="video 1.png" alt="Editing Project 1" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+        <h4>BS Video 1</h4>
+      </a>
+
+      <a href="https://youtube.com/shorts/wAu4OJC1YL0?si=to62_YLfzOZZJUcP" target="_blank" class="portfolio-item" data-category="editing">
+        <img src="video 2.png" alt="Editing Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+        <h4>BS Video 2</h4>
+      </a>
+
+      <a href="https://youtube.com/shorts/gM7kp2qa7rM?si=1pUJuWJoRvclNG26" target="_blank" class="portfolio-item" data-category="editing">
+        <img src="video 3.png" alt="Editing Project 3" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+        <h4>BS Video 3</h4>
+      </a>
+
+      <a href="https://youtube.com/shorts/6vbujf_OV_4?si=jARv2XtFwCNewJsW" target="_blank" class="portfolio-item" data-category="editing">
+        <img src="video 4.png" alt="Editing Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+        <h4>BS Video 4</h4>
+      </a>
+      
+      <a href="https://youtube.com/shorts/RLVAHLQJlQE?si=2Am2javHQNJ4gtbT" target="_blank" class="portfolio-item" data-category="editing">
+        <img src="video 5.png" alt="Editing Project 2" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
+        <h4>BS Video 5</h4>
+      </a>
+    </div>
+
+    <!-- View More Button -->
+   <div class="view-more-container">
+  <a href="portfolio.html" class="view-more-button">View More Projects</a>
+</div>
+
+
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section colorful alt">
+  <span id="skills" style="position: relative; top: -100px;"></span>
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+    <!-- Frontend Skills -->
+    <div class="skills-category">
+      <h3>Frontend Development</h3>
+      <div class="skill">
+        <i class="fab fa-html5"></i>
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-react"></i>
+        <p>React</p>
+      </div>
+    </div>
+
+    <!-- Backend Skills -->
+    <div class="skills-category">
+      <h3>Backend | Database</h3>
+      <div class="skill">
+        <i class="fab fa-node"></i>
+        <p>Node.js</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-php"></i>
+        <p>PHP</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-database"></i>
+        <p>MySQL</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-database"></i>
+        <p>MongoDB</p>
+      </div>
+    </div>
+
+    <!-- Tools & Version Control -->
+    <div class="skills-category">
+      <h3>Tools & Version Control</h3>
+      <div class="skill">
+        <i class="fab fa-git"></i>
+        <p>Git</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-github"></i>
+        <p>GitHub</p>
+      </div>
+    </div>
+
+    <!-- Design & Editing Tools -->
+    <div class="skills-category">
+      <h3>Design & Editing Tools</h3>
+      <div class="skill">
+        <i class="fas fa-palette"></i>
+        <p>Canva (Design)</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-figma"></i>
+        <p>Figma</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-video"></i>
+        <p>Filmora</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-video"></i>
+        <p>Capcut</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Education Section -->
+<section id="education" class="section colorful">
+  <span id="education" style="position: relative; top: -100px;"></span>
+  <h2>Education</h2>
+ <section id="edu">
+  <p>Educational Detials</p>
+</section><br>
+
+
+
+  <!-- Education Timeline -->
+  <div class="education-timeline">
+    <!-- Education Item 1 -->
+    <div class="education-item">
+      <div class="education-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="education-details">
+        <h3>Suguna Arts And Science college,Coimbatore.</h3>
+        <p>Barathiar University, 2021 - 2024</p>
+        <b><p id="background">BCA - CGPA - 6.257</p></b>
+      </div>
+    </div>
+
+    <!-- Education Item 2 -->
+    <div class="education-item">
+      <div class="education-icon">
+        <i class="fas fa-school"></i>
+      </div>
+      <div class="education-details">
+        <h3>Govt,Hr,Sec,School,Avalpoondurai,Erode.</h3>
+        <p>2019 - 2020</p>
+        <b><p id="background">HSC - 61.8 %</p></b>
+      </div>
+    </div>
+
+    <!-- Education Item 3 -->
+    <div class="education-item">
+      <div class="education-icon">
+        <i class="fas fa-book-open"></i>
+      </div>
+      <div class="education-details">
+        <h3>Govt,Hr,Sec,School,Avalpoondurai,Erode.</h3>
+        <p>2017 - 2018</p>
+        <b><p id="background">SSLC - 71.6 %</p></b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2><br><br><br>
+
+  <div class="contact-container">
+
+    <!-- Left side: contact info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vetrivelselvaraj045@gmail.com" target="_blank">
+          vetrivelselvaraj045@gmail.com
+        </a>
+      </p>
+      <p><i class="fas fa-phone"></i> +91 6369432097</p>
+      <p><i class="fas fa-map-marker-alt"></i> Erode , Tamilnadu , India</p>
+      <p>Feel free to drop a message. I'm always open to discussing new ideas or projects.</p>
+
+      <!-- Buttons container -->
+      <div class="buttons-wrapper">
+        <a href="tel:+916369432097" class="contact-button call-button">📞 Call Me</a>
+        <button type="button" class="contact-button sms-button" id="toggleFormBtn">📩 Text Me</button>
+      </div>
+    </div>
+
+    <!-- Right side: contact form (initially hidden) -->
+    <div class="contact-form-wrapper" id="contactFormWrapper" style="display: none;">
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+  }
+
+  // Get all navigation links
+  const navLinks = document.querySelectorAll(".nav-links ul li a");
+
+  // Add a click event listener to each navigation link
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      const menu = document.getElementById("nav-menu");
+      // If the menu is active (visible), hide it
+      if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+      }
+    });
+  });
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const portfolioSections = document.querySelectorAll(".portfolio-section");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Update active button
+      document.querySelector(".filter-btn.active")?.classList.remove("active");
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+
+      portfolioSections.forEach(section => {
+        const items = section.querySelectorAll(".portfolio-item");
+        let hasVisible = false;
+
+        items.forEach(item => {
+          const category = item.getAttribute("data-category");
+          const match = (filter === "all" || category === filter);
+
+          item.style.display = match ? "block" : "none";
+          if (match) hasVisible = true;
+        });
+
+        // Show/hide section based on content match
+        section.style.display = hasVisible ? "grid" : "none";
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleFormBtn");
+    const formWrapper = document.getElementById("contactFormWrapper");
+
+    toggleBtn.addEventListener("click", () => {
+      const isVisible = formWrapper.style.display === "block";
+      formWrapper.style.display = isVisible ? "none" : "block";
+    });
+  });
+
+  const toggleFormBtn = document.getElementById('toggleFormBtn');
+  const contactFormWrapper = document.getElementById('contactFormWrapper');
+
+  toggleFormBtn.addEventListener('click', () => {
+    if (!contactFormWrapper.classList.contains('show')) {
+      contactFormWrapper.classList.add('show');
+      contactFormWrapper.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
+
+
+</body>
+</html>
